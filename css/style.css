@@ -214,18 +214,22 @@ MAIN CONTENT NEWS | EVENTS
 .title__content {
 	display: flex;
 	justify-content: space-between;
+	max-width: 100%;
 }
 
 .header__title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-sizing: border-box;
 	width: 60%;
-	padding: 0 20px;
+	padding-right: 20px;
+	
+	
 }
 
-.title__allNews a {
-	color: #f6a839;
+.title__allNews a, .article__more a {
+	color: #f78704;
 }
 
 
@@ -234,46 +238,103 @@ MAIN CONTENT NEWS | EVENTS
 	justify-content: space-between;
 	align-items: center;
 	width: 40%;
-	padding: 0 20px;
 }
 
 .title__allEvents a {
 	color:#3d477f;
 }
 
+.title__events {
+	margin-left: 20px;
+}
 
-.main__article {
+.wrap__content {
 	display: flex;
 	justify-content: space-between;
+}
+
+.main__article {
 	max-width: 60%;
 	border: none;
-	margin-right: 30px;
+	border:2px solid white;
+	background: #c0c6ec;
+
 }
 
 .main__article:hover {
-	border:1px solid orange;
+	border:2px solid #f78704;
+	-webkit-transition: all 0.3s ease;;
+  	-moz-transition: all 0.6s ease;;
+  	-o-transition: all 0.6s ease;;
+  	transition: all 0.6s ease;
+}
+
+.artcile__img {
+	float: left;
 }
 
 .artcile__img a {
-	width: 350px;
+	width: 300px;
 	background-image: url(../uploads/IMG_2825.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
     display: block;
 }
 
-.article__description {
+.article__description {	
+	width: 50%;
+	height: 240px;
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+.article__more {
+	display: block;
+	float: left;
 	padding: 0 15px;
 }
 
 
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
 
+.event__content {
+	box-sizing: border-box;
+	max-width: 40%;
+	margin-left: 20px;
+	padding-left: 20px;
+	
+}
 
+.event__items {
+	position: relative;
+	width: 100%;
+	background: #c0c6ec;
+	border: 2px solid white;
+	
+}
 
-
-
+.event__items:hover {
+	border:2px solid #3d477f;
+	-webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+.event__img {
+	width: 100%;
+    min-height: 130px
+}
+.img-responsive {
+	display: block;
+    max-width: 100%;
+    height: auto
+}
 
 @media (max-width: 1215px) {
 	.navbar {
