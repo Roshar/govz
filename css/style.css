@@ -249,12 +249,12 @@ MAIN CONTENT NEWS | EVENTS
 }
 
 .wrap__content {
-	display: flex;
-	justify-content: space-between;
+	display: block;
+	max-width: 60%;
 }
 
 .main__article {
-	max-width: 60%;
+	
 	border: none;
 	border:2px solid white;
 	background: #c0c6ec;
@@ -294,6 +294,10 @@ MAIN CONTENT NEWS | EVENTS
 	display: block;
 	float: left;
 	padding: 0 15px;
+}
+
+.wrap-flex {
+	display: flex;
 }
 
 
