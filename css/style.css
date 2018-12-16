@@ -288,6 +288,11 @@ MAIN CONTENT NEWS | EVENTS
 	height: 240px;
 	padding: 0 15px;
 	overflow: hidden;
+	
+}
+.article__description p,
+.event__descripton p {
+	color: #272727;
 }
 
 .article__more {
@@ -340,6 +345,11 @@ MAIN CONTENT NEWS | EVENTS
     height: auto
 }
 
+.event__descripton {
+	padding: 10px 25px;
+}
+
+
 @media (max-width: 1215px) {
 	.navbar {
 		display: block;
@@ -363,26 +373,6 @@ MAIN CONTENT NEWS | EVENTS
 		max-width: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 img {
 	max-width: 100%;
