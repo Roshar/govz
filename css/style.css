@@ -223,9 +223,7 @@ MAIN CONTENT NEWS | EVENTS
 	align-items: center;
 	box-sizing: border-box;
 	width: 60%;
-	padding-right: 20px;
-	
-	
+	padding-right: 20px;	
 }
 
 .title__allNews a, .article__more a {
@@ -246,6 +244,7 @@ MAIN CONTENT NEWS | EVENTS
 
 .title__events {
 	margin-left: 20px;
+	padding-left: 20px;
 }
 
 .wrap__content {
@@ -254,11 +253,8 @@ MAIN CONTENT NEWS | EVENTS
 }
 
 .main__article {
-	
-	border: none;
-	border:2px solid white;
-	background: #c0c6ec;
-
+	border:2px solid #cfd4f5;
+	background: #cfd4f5;
 }
 
 .main__article:hover {
@@ -288,8 +284,8 @@ MAIN CONTENT NEWS | EVENTS
 	height: 240px;
 	padding: 0 15px;
 	overflow: hidden;
-	
 }
+
 .article__description p,
 .event__descripton p {
 	color: #272727;
@@ -323,8 +319,9 @@ MAIN CONTENT NEWS | EVENTS
 .event__items {
 	position: relative;
 	width: 100%;
-	background: #c0c6ec;
-	border: 2px solid white;
+	background: #cfd4f5;
+	border: 2px solid #cfd4f5;
+	margin-bottom: 20px;
 	
 }
 
@@ -347,6 +344,89 @@ MAIN CONTENT NEWS | EVENTS
 
 .event__descripton {
 	padding: 10px 25px;
+}
+
+.articles {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	position: relative;
+	margin-top: 30px;
+}
+
+.artcile-border {
+	border: 2px solid #cfd4f5;
+}
+
+.post-wrap {
+	margin: 20px 0;
+}
+
+.artcile-border:hover {
+	border:2px solid #f78704;
+	-webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.articles__column1 {
+	width: 48%;
+}
+
+.articles__column2 {
+	width: 48%;
+}
+
+.post-header, 
+.post-content {
+	padding: 15px 15px;
+}
+
+.date {
+	color: #3d477f;
+}
+
+a.name {
+	display: block;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #272727;
+	font-weight: bold;
+    text-decoration: none;
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+
+.post-header a:hover {
+	text-decoration: underline;
+	font-size: 24px;
+}
+
+.tags {
+	padding:15px 15px;
+}
+
+.tags a {
+	color: #f78704;
+	
+}
+
+.media__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+}
+
+.video-cards {
+	display: flex;
+	max-width: 100px;
+}
+
+.video__item {
+	width: 40%;
 }
 
 
