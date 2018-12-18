@@ -426,7 +426,7 @@ a.name {
 }
 
 .video__item {
-	width: 40%;
+	max-width: 40%;
 }
 
 
