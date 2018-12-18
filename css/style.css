@@ -464,21 +464,23 @@ a.name {
 
 .footer__col1 {
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 50%;
 	padding: 40px 15px;
-	border: 1px solid white;
+	
 }
 .footer__col2 {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+
 	max-width: 40%;
-	padding: 40px 15px;
-	border: 1px solid white;
+	padding: 40px 0;
+	
 }
 
 .footer__contact {
-	min-width: 40%;
-	border: 1px solid white;
+	
+	
 }
 
 .footer__contact p {
@@ -488,21 +490,122 @@ a.name {
 
 .footer__logo-content {
 	display: flex;
-	max-width: 50%;
+	max-width: 60%;
 	align-items: center;
 }
 
-.logo__text {
-	max-width: 50%;
-	color: white;
+a .logo__link {
+	display: block;
 }
 
 .logo__img {
-	padding: 0;
-	background-image: url(../img/logo2.png);
-	width: 240px;
-	height: 180px;
+	max-width: 120px;
+	height: auto;
 }
+
+.logo__img img {
+	width: 100%;
+	display: block;
+}
+
+.logo__text {
+	max-width: 50%; 
+	color: white;
+}
+
+.copyright {
+	border-top: 2px #393939 solid;
+	margin-top: 20px;
+	padding-top: 20px;
+	color: white;
+
+}
+
+.footer__navbar {
+	width: 30%;
+}
+
+.footer__social {
+	 text-align: right;
+	width: 70%;
+}
+
+.footer__social p ,.founder p{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-align: right;
+}
+
+
+.footer__menu li {
+	list-style-type: none;
+	padding: 10px 0;
+}
+
+.footer__menu li a ,.footer__contact a {
+	color: #cfd4f5
+}
+
+ul.icon__list {
+
+	font-size: 0px;
+}
+
+.icon__list li {
+	padding: 0px;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+
+.responsive-icon {
+	max-width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icon__list li a {
+	display: block;
+    width: 40px;
+    height: 40px;
+}
+
+
+a.vk {
+	background-image: url('../img/icons/vk.png');
+}
+
+a.facebook {
+	background-image: url('../img/icons/fc.png');
+}
+
+a.instagram {
+	background-image: url('../img/icons/inst.png');
+}
+
+a.youtube {
+	background-image: url('../img/icons/youtube.png');
+}
+
+a.rss {
+	background-image: url('../img/icons/rss.png');
+}
+
+
+.founder {
+	padding:0;
+	width: 100%;
+	text-align: right;
+	color: white
+}
+
+.founder a {
+	color: #cfd4f5;
+}
+
+
 
 
 @media (max-width: 1215px) {
