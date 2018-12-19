@@ -266,22 +266,15 @@ MAIN CONTENT NEWS | EVENTS
 }
 
 .artcile__img {
-	float: left;
+	width: 100%;
 }
 
-.artcile__img a {
-	width: 300px;
-	background-image: url(../uploads/IMG_2825.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    display: block;
-}
+
 
 .article__description {	
-	width: 50%;
-	height: 240px;
+	width: 100%;
+	height: auto;
+	max-height: 150px;
 	padding: 0 15px;
 	overflow: hidden;
 }
@@ -293,20 +286,13 @@ MAIN CONTENT NEWS | EVENTS
 
 .article__more {
 	display: block;
-	float: left;
-	padding: 0 15px;
+	padding: 10px 15px;
 }
 
 .wrap-flex {
 	display: flex;
 }
 
-
-.clearfix:after {
-	content: '';
-	clear: both;
-	display: block;
-}
 
 .event__content {
 	box-sizing: border-box;
