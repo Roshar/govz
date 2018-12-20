@@ -210,51 +210,77 @@ MAIN CONTENT NEWS | EVENTS
 /*NEWS BOX///////////////////////////////////////////////*/
 
 
-.main-content {
+.row {
 	max-width:1330px;
 	margin: 0 auto;
+}
+
+.main-content {
+	width: 100%;
 	display: flex;
+}
+
+.news-box {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 65%;
+	border: 1px solid red
+	justify-content: space-between;
 
 }
 
+.header-news {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100px;
+}
 
 .main-card {
+	border: 2px #e1e1e1 solid
+}
+
+.main__img {
+	width: 200px;
+	height: 200px;
+	max-height: 250px;
+	overflow: hidden;
+	background-size: cover;
+	background-image: url(../uploads/main-card.jpg);
+
+}
+
+.main__img img{
 	width: 100%;
+	height: auto;
 }
 
-.news-box {
-	flex: 1;
+.post {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 1px solid red;
-}
-
-.news-box {
-
-	width: 600px;
-}
-
-.post__content {
-	box-sizing: border-box;
-	padding: 0.76vw;
 }
 
 .post__item {
-	border: 2px #e1e1e1 solid;
-	max-width: 40%;
-	/*max-width: 27.84vw;*/
-	margin: 10px;
+	flex-basis: 45%;
+	border: 2px solid 
 }
 
+/*EVENTS BOX///////////////////////////////////////////////*/
 
-/*/////////////////////////////////////////////////////
-/*EVENTS BOX*/
 .event-box {
-	border: 1px solid yellow;
-	box-sizing: border-box;
-	width:500px;
-	flex: 1;
-	padding: 1.53%;
+	border: 2px solid yellow;
+	flex-basis: 45%;
+}
+
+.header-event {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100px;
 }
 
 .footer {
@@ -445,8 +471,7 @@ a.rss {
 	}
 	
 	.main-content {
-	max-width: 1300px;
-	margin: 0 auto;
+	
 	flex-direction: column;
 }
 
