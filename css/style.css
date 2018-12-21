@@ -394,9 +394,34 @@ span.date {
 	
 }
 
+/*LOAD NEWS BUTTON*/
 
+.load {
+	max-width: 1300px;
+	margin: 0 auto;
+}
 
+.load__btn	{
+	width: 100%;
+	display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #00bde8;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ebebeb;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 
+a#load-news {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #3d477f;
+
+}
 
 /* FOOTER ////////////////////////////////////////////////////*/
 .footer {
