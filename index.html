@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Govzalla</title>
 </head>
 <body>
@@ -15,6 +16,13 @@
 				<img src="img/logo.png" alt="логотип ЧИПКРО">
 			</div>
 			<div class="header__sidebar">
+				<div class="menu-button">
+					<button type="button" class="navbar-toggle" onclick="myFunction(this)">
+							<span class="icon-menu-btn one-anim"></span>
+							<span class="icon-menu-btn two-anim"></span>
+							<span class="icon-menu-btn three-anim"></span>
+					</button>
+				</div>
 				<ul>
 					<li>we</li>
 					<li>we</li>
@@ -27,7 +35,25 @@
 			<div class="navbar">
 				<div class="navbar__top">
 					<ul>
-						<li><a href="#">Институт</a></li>
+						<li class="dropdown">
+							<a href="#">Институт <span class="carent"></span></a>
+						<div class="dropdown-menu">
+								<div class="table">
+							      <ul class="row">
+							        <li class="cell"><a href="">История института</a></li>
+							        <li class="cell"><a href="">Структура института</a></li>
+							        <li class="cell"><a href="">Деятельность института</a></li>
+							        <li class="cell"><a href="">Кафедры</a></li>
+							      </ul>
+							      <ul class="row">
+							        <li class="cell"><a href="">Центры</a></li>
+							        <li class="cell"><a href="">Ученный совет</a></li>
+							        <li class="cell"><a href="">Программы повышения квалификации</a></li>
+							        <li class="cell"><a href="">Профсоюзная страничка</a></li>
+							      </ul>
+   								</div>
+						</div>
+						</li>
 						<li><a href="#">Семинары и конференции</a></li>
 						<li><a href="#">Вебинары</a></li>
 						<li><a href="">Проекты</a></li>
@@ -80,18 +106,22 @@
 					<div class="main__img">
 						
 					</div>
-					<div class="main__description">
+					<div class="main__right">
+						<div class="main__description">
 						<a href="#" class="h1post">Заголовок новости</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim nostrum ea, suscipit alias expedita eos quod? Quia itaque deserunt asperiores provident illo, dolor, et commodi iste facilis repellat accusantium.</p>
 					</div>
 					<div class="main__link">
 						<a href="#" class="post__more">Подробнее...</a>
 					</div>
+					</div>
+					
 					
 				</div>
 				<div class="post">
 					<div class="post__item">
 					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
 						<a href="" class="h1post">Совещание со специалистами ММС республики</a>
 					</div>
 					<div class="post__img">
@@ -106,6 +136,7 @@
 				</div>
 				<div class="post__item">
 					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
 						<a href="" class="h1post">Семинар для руководителей общеобразовательных организаций-членов Ассоциации директоров ЧР</a>
 					</div>
 					<div class="post__img">
@@ -120,6 +151,7 @@
 				</div>
 					<div class="post__item">
 					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
 						<a href="" class="h1post">Республиканский конкурс "Лучшая школа Чеченской Республики - 2018"</a>
 					</div>
 					<div class="post__img">
@@ -134,6 +166,7 @@
 				</div>
 					<div class="post__item">
 					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
 						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
 					</div>
 					<div class="post__img">
@@ -232,10 +265,10 @@
 
 	<div class="container">
 		<div class="load">
-		<div class="load__btn">
-			<a href="#" id="load-news">Загрузить еще</a>
+			<div class="load__btn">
+				<a href="#" id="load-news">Загрузить еще</a>
+			</div>
 		</div>
-	</div>
 	</div>
 	
 	<!--FOOTER CONTENT-->
@@ -299,5 +332,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		// function for toggle btn navbar 
+		function myFunction(x) {
+ 		 x.classList.toggle("change");
+}
+	</script>
 </body>
 </html>
