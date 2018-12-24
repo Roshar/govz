@@ -254,6 +254,11 @@ button.navbar-toggle:focus {
 	height:500px;
 	background-size: cover;
 	opacity: 1;
+	-webkit-transition: all 0.8s ease-in-out;
+  	-moz-transition: all 0.8s ease-in-out;
+  	-o-transition: all 0.8s ease-in-out;
+ 	transition: all 0.8s ease-in-out;
+
 }
 
 
@@ -567,8 +572,8 @@ span.date {
 /*LOAD NEWS BUTTON*/
 
 .load {
-	max-width: 1330px;
-	margin: 0 auto;
+	margin:15px 0;
+	max-width: 100%;
 }
 
 .load__btn	{
