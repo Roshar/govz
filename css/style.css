@@ -1108,11 +1108,14 @@ a.rss {
 	    text-decoration: none;
 }
 
+	.navbar {
+		display: none;
+	}
 	.dropdown-menu {
 		position: static;
 	    left: 0;
 	    z-index: 1000;
-	    display: block;
+	    display: none;
 	    min-width: 100%;
 	    min-height: 80px;
 	    padding: 35px 0;
