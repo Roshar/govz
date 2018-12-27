@@ -1081,10 +1081,10 @@ a.rss {
 	display: block;
 	}
 
-	/*.navbar {
+	.navbar {
 		display: none;
 	}
-*/
+
 	.navbar__top ul {
 		padding: 0;
 		height: 100%;
@@ -1098,7 +1098,6 @@ a.rss {
 	}
 
 	.navbar__top ul li a {
-		
 	    text-transform: uppercase;
 	    font-size: 16px;
 	    font-family: 'Roboto', sans-serif;
@@ -1112,7 +1111,7 @@ a.rss {
 		position: static;
 	    left: 0;
 	    z-index: 1000;
-	    display: block;
+	    display: none;
 	    min-width: 100%;
 	    min-height: 80px;
 	    padding: 35px 0;
