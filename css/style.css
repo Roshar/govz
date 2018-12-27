@@ -451,9 +451,11 @@ MAIN CONTENT NEWS | EVENTS
 }
 
 .post__item {
+	display: none;
 	max-width: 48%;
 	border: 2px #e1e1e1 solid;
 	margin-top: 20px;
+
 }
 
 .post__item:hover, .main-card:hover {
@@ -1081,10 +1083,10 @@ a.rss {
 	display: block;
 	}
 
-	/*.navbar {
-		display: none;
+	.navbar {
+		display: block;
 	}
-*/
+
 	.navbar__top ul {
 		padding: 0;
 		height: 100%;
@@ -1098,7 +1100,6 @@ a.rss {
 	}
 
 	.navbar__top ul li a {
-		
 	    text-transform: uppercase;
 	    font-size: 16px;
 	    font-family: 'Roboto', sans-serif;
