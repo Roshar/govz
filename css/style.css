@@ -451,9 +451,11 @@ MAIN CONTENT NEWS | EVENTS
 }
 
 .post__item {
+	display: none;
 	max-width: 48%;
 	border: 2px #e1e1e1 solid;
 	margin-top: 20px;
+
 }
 
 .post__item:hover, .main-card:hover {
