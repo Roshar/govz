@@ -31,8 +31,18 @@
 		</div>
 		<div class="navbar-container">
 			<div class="navbar">
+				<div class="navbar__search">
+					<form action="#" class="form-search">
+						<div class="form-group">
+							<input type="text" class="input-search" placeholder="Поиск...">
+						<button type="submit" class="btn btn-search fa fa-search">
+							<i class="icon-search"></i>
+						</button>
+						</div>
+					</form>
+				</div>
 				<div class="navbar__top">
-					<ul class="ul">
+					<ul>
 						<li class="dropdown">
 							<a href="#">Институт <span class="carent"></span></a>
 						<div class="dropdown-menu">
@@ -58,18 +68,10 @@
 						<li><a href="">Элетронная библиотека</a></li>
 					</ul>
 				</div>
-				<div class="navbar__search">
-					<form action="#" class="form-search">
-						<div class="form-group">
-							<input type="text" class="input-search" placeholder="Поиск...">
-						<button type="submit" class="btn btn-search fa fa-search">
-							<i class="icon-search"></i>
-						</button>
-						</div>
-					</form>
-				</div>
+				
 			</div>
 		</div>
+		
 	</div>
 	<div class="container slide-main-content">
 			<div class="slide__wrap">
@@ -428,12 +430,13 @@
 							$('.navbar').slideToggle();
 						})
 
- 		 			})
- 		 			$(window).resize(function(){
-							if ($(window).width() > 500) {
-									$('.navbar').removeAttr('style')
+						$(window).resize(function(){
+							if($(window).width() > 768) {
+								$('.navbar').removeAttr('style')
 							}
 						})
+
+ 		 			})
  		 			
 		</script>
 
@@ -441,11 +444,7 @@
 	<script src="js/mado.js"></script>
 	<script src="js/news-load.js"></script>
 	<script>
-		// function for toggle btn navbar 
-// 		function myFunction(x) {
-//  		 x.classList.toggle("change");
-//  		 $('.navbar').stop(false,true).slideToggle(300);
-// }
+
 	</script>
 </body>
 </html>
