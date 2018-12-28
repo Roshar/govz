@@ -116,7 +116,7 @@ button.navbar-toggle:focus {
 
 .navbar__top ul {
 	padding: 0;
-	height: 100%;
+	border:1px solid red;
 }
 
 .navbar__top ul li {
@@ -164,6 +164,7 @@ button.navbar-toggle:focus {
 
 li.dropdown {
 	height: 100%;
+	border:1px solid yellow;
 }
 
 .dropdown-menu div.table {
@@ -204,7 +205,7 @@ li.dropdown {
 .input-search {
 	width: 70%;
 	padding-left: 10px;
-	height: 60px;
+	height: 100%;
 	background: transparent;
 	border-radius: 0;
 	border:0;
@@ -1035,6 +1036,14 @@ a.rss {
 }
 
 @media (max-width: 768px) {
+	.header	{
+		display: flex;
+		justify-content: space-between;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
 	
 	.post__item {
 	max-width: 100%;
@@ -1080,26 +1089,31 @@ a.rss {
 		width: 70%;
 	}
 	.menu-button {
-	display: block;
-	}
-
-	.navbar {
 		display: block;
 	}
+	.navbar-container {
+		width: 100%;
+		background: #3d477f;
+	}
+
+	
 
 	.navbar__top ul {
-		padding: 0;
+		padding: 0px;
 		height: 100%;
+		margin: 0px;
 }
 
 	.navbar__top ul li {
 		display: block;
 		list-style-type: none;
-		padding: 0;
+		padding:10px 0px;
 		text-align: center;
+		border-bottom: 1px solid grey
 	}
 
 	.navbar__top ul li a {
+		display: block;
 	    text-transform: uppercase;
 	    font-size: 16px;
 	    font-family: 'Roboto', sans-serif;
@@ -1109,8 +1123,11 @@ a.rss {
 	    text-decoration: none;
 }
 
-	.navbar {
+	div.navbar {
+		max-width: 100%;
 		display: none;
+		margin: 0;
+		padding: 0;
 	}
 	.dropdown-menu {
 		position: static;
@@ -1119,9 +1136,11 @@ a.rss {
 	    display: none;
 	    min-width: 100%;
 	    min-height: 80px;
-	    padding: 35px 0;
+	    padding: 0px;
+	    margin: 0px;
 	    list-style: none;
-	    background: #3d477f;
+	    background: #969fd1;
+	    width: 100%;
 	}
 
 

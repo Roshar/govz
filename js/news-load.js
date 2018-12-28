@@ -9,7 +9,9 @@ $(document).ready(function(){
 
 		$('.post__item:hidden').slice(0,2).slideDown();
 
-		if ($('.post__')) {}
+		if ($('.post__item:hidden').length == 0) {
+			$('.load__btn').fadeOut('slow');
+		}
 
 		$('html,body').animate({
 			scrollTop: $(this).offset().bottom

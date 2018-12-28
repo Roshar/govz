@@ -429,6 +429,11 @@
 						})
 
  		 			})
+ 		 			$(window).resize(function(){
+							if ($(window).width() > 500) {
+									$('.navbar').removeAttr('style')
+							}
+						})
  		 			
 		</script>
 
